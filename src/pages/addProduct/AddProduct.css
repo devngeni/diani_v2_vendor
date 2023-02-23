@@ -1,0 +1,87 @@
+.add-product-becky {
+  height: 100vh;
+  background-color: #0d1433;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.product-input-becky {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+.add-product-becky input {
+  background-color: #202743;
+  border: none;
+  border-radius: 8px;
+}
+.add-product-becky textarea {
+  background-color: #202743;
+  border: none;
+  border-radius: 8px;
+}
+.form-dropdown button {
+  width: 100%;
+  background-color: #202743;
+  border: none;
+}
+.form-dropdown button:hover {
+  background-color: #202743;
+}
+.dropdown-menu.show {
+  display: block;
+  background-color: #202743;
+  width: 100%;
+}
+.dropdown-menu.show:hover {
+  color: #202743;
+}
+.dropdown-menu.show a {
+  color: white;
+}
+.offer-buttons-becky {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.offer-buttons-becky .btn {
+  background-color: #2a2f45;
+  border: none;
+  border-radius: 7px;
+  font-size: 11px;
+}
+.submit-buttons-becky {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.submit-buttons-becky .btn {
+  padding: 20px;
+}
+.post-submit-becky {
+  background-color: #66f0f1 !important;
+  border: none !important;
+  color: black !important;
+  font-weight: 800 !important;
+}
+.clear-submit-becky {
+  background-color: #2a2f45 !important;
+  border: none !important;
+  color: #66f0f1 !important;
+  font-weight: 800 !important;
+}
+.product-image-becky {
+  display: flex;
+  justify-content: center;
+}
+.add-image-button-becky {
+  display: flex;
+  justify-content: center;
+}
+.add-image-button-becky button {
+  margin: 15px 15px;
+  padding: 5px;
+  border: none;
+  background-color: #009fd4;
+}

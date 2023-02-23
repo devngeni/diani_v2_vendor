@@ -1,0 +1,20 @@
+.navbar-becky {
+  background-color: #231d47;
+  color: #66f0f1;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+.navbar-becky .navbar a {
+  color: #66f0f1;
+  font-size: 12px;
+}
+.nav-profile-becky {
+  border: 1px solid #66f0f1;
+  border-radius: 50%;
+}
+@media screen and (max-width: 1000px) {
+  .nav-bootstrap-becky {
+    width: 100%;
+  }
+}
