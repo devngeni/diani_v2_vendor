@@ -1,4 +1,18 @@
 .vendor-add-page {
   background-color: #0d1433;
   height: 100vh;
+  padding: 30px;
+  display: block;
+}
+.dashboard-table-becky {
+  font-size: 12px;
+}
+.dashboard-table-becky th {
+  color: #66f0f1;
+}
+
+@media screen and (max-width: 1000px) {
+  .vendor-add-page {
+    padding: 20px;
+  }
 }
