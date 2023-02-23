@@ -1,0 +1,94 @@
+.Login{
+    width: 100vw;
+    min-height: 100vh;
+    background: #0D1433;
+    color: white;
+}
+.Login-nav{
+    background: #241845;
+    height: 78px;
+    width: 100vw;
+}
+.become-a-vendor{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 21px;
+line-height: 25px;
+text-align: center;
+
+color: #66F0F1;
+
+
+}
+.LoginInput{
+    width: 100vw;
+}
+.logo-div{
+    /* border: 2px solid honeydew; */
+    padding-top: 200px;
+}
+.input-div{
+    text-align: left;
+    margin: 20px 1px
+}
+.input-div-space{
+    width: 315px;
+    height: 48px;
+    background-color: rgb(43, 41, 41);
+    border-radius: 8px;
+}
+.input-space{
+    background-color: rgb(43, 41, 41) !important;
+}
+.input-icon{
+    width: 13.33px;
+    height: 13.33px;
+}
+.input-div{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+color: #FFFFFF;
+}
+.below-logo{
+    width: 200px;
+    /* border: 1px solid gold; */
+    margin: auto !important;
+}
+.submit-div{
+    width: 100vw;
+    /* border: 1px solid firebrick; */
+}
+.submit-div-button{
+    margin: auto !important;
+    width: 315px;
+    height: 56px;
+    border-radius: 16px;
+    background-color: #66F0F1 ;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+text-align: center;
+
+color: #202643;
+}
+@media only screen and(max-width:920px){
+.logo-div{
+    padding-top: 165px;
+}
+.below-logo{
+    width: 188px;
+    border: 1px solid gold;
+    margin: auto !important;
+}
+}
