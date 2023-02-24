@@ -10,7 +10,18 @@
 .dashboard-table-becky th {
   color: #66f0f1;
 }
-
+.vendor-details-becky h6 {
+  color: #66f0f1;
+}
+.vendor-data-becky {
+  color: white;
+  font-size: 12px;
+}
+.dashboard-image-button-becky button {
+  padding: 5px;
+  border: none;
+  background-color: #009fd4;
+}
 @media screen and (max-width: 1000px) {
   .vendor-add-page {
     padding: 20px;

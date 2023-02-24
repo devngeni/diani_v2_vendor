@@ -1,7 +1,8 @@
 import React from "react";
 import './Dashboard.css'
 import NavBar from "../../components/navbar/navbar";
-import { Table } from "react-bootstrap";
+import { Button, Table } from "react-bootstrap";
+import { FaPlus } from "react-icons/fa";
 
 
 const Dashboard = () => {
@@ -9,6 +10,11 @@ const Dashboard = () => {
         <>
             <NavBar />
             <div className="vendor-add-page">
+                <div className="vendor-details-becky mb-4">
+                    <h6><span className="vendor-data-becky">Name: </span>Vendor One</h6>
+                    <h6><span className="vendor-data-becky">Email: </span>Vendor1@gmail.com</h6>
+                    <h6><span className="vendor-data-becky">Category: </span>Food</h6>
+                </div>
                 <Table striped hover variant="dark" className="dashboard-table-becky">
                     <thead>
                         <tr>
@@ -43,6 +49,9 @@ const Dashboard = () => {
                         </tr>
                     </tbody>
                 </Table>
+                <div className="dashboard-image-button-becky">
+                    <Button style={{ borderRadius: '50%', float: 'right' }}><FaPlus size="30px" /></Button>
+                </div>
             </div>
         </>
     )
