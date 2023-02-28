@@ -42,8 +42,11 @@
 }
 .offer-buttons-becky {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.offer-price-becky {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
 }
 .offer-buttons-becky .btn {
   background-color: #2a2f45;
@@ -84,4 +87,29 @@
   padding: 5px;
   border: none;
   background-color: #009fd4;
+}
+.postCard {
+  border: 1px dashed gray !important;
+  height: 150px !important;
+}
+.inputTab {
+  display: none !important;
+}
+.rendor-productData-becky::placeholder {
+  color: white;
+}
+.displayImages {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 20px;
+  width: 80%;
+  margin: auto;
+  overflow-x: scroll;
+}
+.displayImages img {
+  object-fit: cover;
+  width: 200px;
+}
+.displayImages::-webkit-scrollbar {
+  display: none;
 }

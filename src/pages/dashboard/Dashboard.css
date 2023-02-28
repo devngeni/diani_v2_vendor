@@ -4,26 +4,42 @@
   padding: 30px;
   display: block;
 }
-.dashboard-table-becky {
-  font-size: 12px;
+.vendor-profile-becky {
+  padding-top: 10px;
 }
 .dashboard-table-becky th {
   color: #66f0f1;
 }
-.vendor-details-becky h6 {
-  color: #66f0f1;
+.vendor-details-becky {
+  display: grid;
+  grid-template-columns: 0fr 3fr;
+  gap: 20px;
+}
+.vendor-image-becky {
+  width: 100px !important;
+  height: 100px !important;
+}
+.vendor-details-becky .vendor-header-becky,
+h1 {
+  color: white;
 }
 .vendor-data-becky {
   color: white;
   font-size: 12px;
 }
 .dashboard-image-button-becky button {
-  padding: 5px;
   border: none;
+  border-radius: 50%;
   background-color: #009fd4;
 }
 @media screen and (max-width: 1000px) {
   .vendor-add-page {
     padding: 20px;
+  }
+  .vendor-header-becky {
+    font-size: 16px;
+  }
+  .vendor-profile-becky {
+    padding-top: 18px;
   }
 }

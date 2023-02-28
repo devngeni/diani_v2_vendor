@@ -17,7 +17,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/vendor-add-list" element={<AddProduct />} />
         <Route path="/vendor-edit-list" element={<EditProduct />} />
-        <Route path="/vendor-view-list" element={<ViewProduct />} />
+        <Route path="/vendor-view-list/:id" element={<ViewProduct />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
