@@ -11,7 +11,24 @@
 }
 .nav-profile-becky {
   border: 1px solid #66f0f1;
+  width:40px;
+  height: 40px;
   border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+}
+.nav-bootstrap-becky{
+  display:flex;
+  justify-content: space-between;
+  width: 40vw;
+  max-width: 1000px;
+}
+.nav-bootstrap-becky .me-auto{
+  align-items: center;
+  margin:auto;
+  right:10px;
+  position:absolute;
+
 }
 @media screen and (max-width: 1000px) {
   .nav-bootstrap-becky {

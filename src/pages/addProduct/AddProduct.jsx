@@ -31,7 +31,6 @@ const AddProduct = () => {
 
             let formData = new FormData();
             formData.append("product_name", productName);
-            console.log("naeee", formData);
             formData.append("description", description);
             formData.append("category", vendorData.vendor_category);
             formData.append("price", productPrice);
@@ -126,12 +125,12 @@ const AddProduct = () => {
                     </div>
                     <div className="product-image-becky mb-3">
                         <Card className="postCard">
-                            <form>
+                            <form style={{background:"#000"}}>
                                 <label className="fileInput" style={{
-                                    color
-                                        : 'black'
+                                    color: '#fff',
+                                    background:"#202743"
                                 }}>
-                                    Click Here to Select multiple Images <br />
+                                    Upload product Image <br />
                                     {/* <div className="add-image-button-becky">
                                         <Button style={{ borderRadius: '50%' }}><FaPlus size="30px" /></Button>
                                     </div> */}

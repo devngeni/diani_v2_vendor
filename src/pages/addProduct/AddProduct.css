@@ -89,8 +89,10 @@
   background-color: #009fd4;
 }
 .postCard {
-  border: 1px dashed gray !important;
+  background-color: #202743 !important;
   height: 150px !important;
+  padding:5%;
+
 }
 .inputTab {
   display: none !important;
