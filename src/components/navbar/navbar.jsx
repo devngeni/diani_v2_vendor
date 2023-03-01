@@ -14,13 +14,7 @@ const NavBar = () => {
 
                     <Nav.Link onClick={() => navigate(-1)}><FaArrowLeft /> Back</Nav.Link>
                     <Nav className="me-auto">
-                        <Nav.Link href="/">Dashboard</Nav.Link>
-                        <NavDropdown title="Account">
-                            <NavDropdown.Item href="/">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="/">
-                                Another action
-                            </NavDropdown.Item>
-                        </NavDropdown>
+                        <Nav.Link href="/dashboard">Dashboard</Nav.Link>
                         <Nav.Link href="/" className="nav-profile-becky">B</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
