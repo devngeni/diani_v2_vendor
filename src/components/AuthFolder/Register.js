@@ -1,20 +1,20 @@
-import React from 'react';
-import './AuthFolder.css'
-import LoginInput from './LoginInput';
-import RegisterInput from './RegisterInput';
+import React from "react";
+import "./AuthFolder.css";
+import smalllogo from "../../assets/logosmall.png";
+import RegisterInput from "./RegisterInput";
 
 function Register() {
   return (
-    <div className='Login'>
-        <div className='Login-nav'>
-        <img src='/images/nav-login-register.png' className='mx-auto'/>
-        </div>
-        <div className='become-a-vendor pt-6 pb-10'>
-            <p>Become a Vendor </p>
-        </div>
-<RegisterInput />
+    <div className="Login">
+      <div className="Login-nav">
+        <img src={smalllogo} width="50px" alt="beautify auth" />
+      </div>
+      <div className="become-a-vendor pt-4">
+        <p>Become a Vendor </p>
+      </div>
+      <RegisterInput />
     </div>
-  )
+  );
 }
 
 export default Register;

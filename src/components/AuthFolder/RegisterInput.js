@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function RegisterInput() {
   const [vendorName, setVendorName] = useState("");
@@ -55,7 +56,7 @@ function RegisterInput() {
           <label className="input-div">Email</label>
           <div className="input-div-space flex justify-between items-center">
             <div className="ml-6">
-              <img src="/images/emailIcon.png" className="input-icon" />
+              <img src="/images/emailIcon.png" className="input-icon" alt="registration dom"/>
             </div>
             <input
               type="text"
@@ -71,7 +72,7 @@ function RegisterInput() {
           <label className="input-div">Phone Number</label>
           <div className="input-div-space flex justify-between items-center">
             <div className="ml-6">
-              <img src="/images/emailIcon.png" className="input-icon" />
+              <img src="/images/emailIcon.png" className="input-icon" alt="registration describe"/>
             </div>
             <input
               type="text"
@@ -87,7 +88,7 @@ function RegisterInput() {
           <label className="input-div">Product Category</label>
           <div className="input-div-space flex justify-between items-center">
             <div className="ml-6">
-              <img src="/images/emailIcon.png" className="input-icon" />
+              <img src="/images/emailIcon.png" className="input-icon" alt="registration describe"/>
             </div>
             <select
               className="input-space"
@@ -97,7 +98,6 @@ function RegisterInput() {
             >
               <option value="Food">Food</option>
               <option value="Drinks">Drinks</option>
-              <option value="Diving">Diving</option>
             </select>
           </div>
         </div>
@@ -105,7 +105,7 @@ function RegisterInput() {
           <label className="input-div">Password</label>
           <div className="input-div-space flex justify-between items-center">
             <div className="ml-6">
-              <img src="/images/lockicon.png" className="input-icon" />
+              <img src="/images/lockicon.png" className="input-icon" alt="registration done"/>
             </div>
             <input
               type="password"
@@ -121,7 +121,7 @@ function RegisterInput() {
           <label className="input-div"> Confirm Password</label>
           <div className="input-div-space flex justify-between items-center">
             <div className="ml-6">
-              <img src="/images/lockicon.png" className="input-icon" />
+              <img src="/images/lockicon.png" className="input-icon" alt="registration describe"/>
             </div>
             <input
               type="password"
@@ -143,7 +143,7 @@ function RegisterInput() {
       </form>
 
       <div className="grid w-screen place-content-center py-4 text-zinc-600">
-        <p className="mx-auto">Sign In</p>
+        <Link to="/"><p className="mx-auto">Sign In</p></Link>
         <p className="mx-auto">Cancel</p>
       </div>
     </div>

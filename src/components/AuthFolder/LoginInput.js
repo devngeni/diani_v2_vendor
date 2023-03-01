@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function LoginInput() {
   const [emailAddress, setEmailAddress] = useState("");
@@ -49,7 +49,7 @@ function LoginInput() {
           <label className="input-div">Email</label>
           <div className="input-div-space flex justify-between items-center">
             <div className="ml-6">
-              <img src="/images/emailIcon.png" className="input-icon" />
+              <img src="/images/emailIcon.png" className="input-icon" alt="login done"/>
             </div>
             <input
               type="text"
@@ -65,7 +65,7 @@ function LoginInput() {
           <label className="input-div">Password</label>
           <div className="input-div-space flex justify-between items-center">
             <div className="ml-6">
-              <img src="/images/lockicon.png" className="input-icon" />
+              <img src="/images/lockicon.png" className="input-icon" alt="alt register describe"/>
             </div>
             <input
               type="password"
@@ -88,11 +88,11 @@ function LoginInput() {
       </form>
 
       <div className="grid w-screen place-content-center py-4 text-zinc-600">
-        <p className="mx-auto">Create Account</p>
-        <p className="mx-auto">Cancel</p>
+        <Link to="/register"><p className="mx-auto">Create Account</p></Link>
       </div>
     </div>
   );
 }
 
 export default LoginInput;
+
