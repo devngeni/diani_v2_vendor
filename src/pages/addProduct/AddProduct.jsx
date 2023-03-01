@@ -2,9 +2,6 @@ import React, { useRef, useState } from "react";
 import './AddProduct.css'
 import { Button, Card, Dropdown, Form } from "react-bootstrap";
 import NavBar from "../../components/navbar/navbar";
-import mainImage from '../../assets/mainImage.png'
-import { FaPlus } from "react-icons/fa";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 const AddProduct = () => {
@@ -24,6 +21,7 @@ const AddProduct = () => {
     const [files, setFiles] = useState();
     const [image, setImage] = useState("");
     console.log("mmmm", image);
+    
 
     const AddVendorProduct = async (e) => {
         e.preventDefault();

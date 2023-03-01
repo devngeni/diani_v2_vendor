@@ -8,6 +8,10 @@
     background: #241845;
     height: 78px;
     width: 100vw;
+    align-items: center;
+    text-align:center;
+    display:flex;
+    justify-content: center;
 }
 .become-a-vendor{
 font-family: 'Inter';
@@ -26,7 +30,7 @@ color: #66F0F1;
 }
 .logo-div{
     /* border: 2px solid honeydew; */
-    padding-top: 200px;
+    padding-top: 100px;
 }
 .input-div{
     text-align: left;
