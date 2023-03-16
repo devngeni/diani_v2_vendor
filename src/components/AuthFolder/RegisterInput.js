@@ -1,8 +1,9 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import {useNavigate, Link } from "react-router-dom";
 
 function RegisterInput() {
+  const navigate = useNavigate();
   const [vendorName, setVendorName] = useState("");
   const [emailAddress, setEmailAddress] = useState("");
   const [productCategory, setProductCategory] = useState("");
@@ -29,7 +30,7 @@ function RegisterInput() {
         },
         data: formData,
       }).then((res) => {
-        console.log("response", res);
+        navigate("/");
       });
     } catch (error) {
       console.log("errr", error.response);
@@ -41,11 +42,10 @@ function RegisterInput() {
         <div className="grid input-div  w-screen place-content-center">
           <label className="input-div">Name</label>
           <div className="input-div-space flex justify-between items-center">
-            {/* <div className='ml-6'><img src='/images/emailIcon.png' className='input-icon'/></div> */}
             <input
               type="text"
               placeholder="David Monroe"
-              className="input-space"
+              className="input-div-space flex justify-between items-center p-3"
               onChange={(e) => {
                 setVendorName(e.target.value);
               }}
@@ -55,13 +55,11 @@ function RegisterInput() {
         <div className="grid input-div  w-screen place-content-center">
           <label className="input-div">Email</label>
           <div className="input-div-space flex justify-between items-center">
-            <div className="ml-6">
-              <img src="/images/emailIcon.png" className="input-icon" alt="registration dom"/>
-            </div>
+
             <input
               type="text"
               placeholder="david@gmail.com"
-              className="input-space"
+              className="input-div-space flex justify-between items-center p-3"
               onChange={(e) => {
                 setEmailAddress(e.target.value);
               }}
@@ -71,13 +69,10 @@ function RegisterInput() {
         <div className="grid input-div  w-screen place-content-center">
           <label className="input-div">Phone Number</label>
           <div className="input-div-space flex justify-between items-center">
-            <div className="ml-6">
-              <img src="/images/emailIcon.png" className="input-icon" alt="registration describe"/>
-            </div>
             <input
               type="text"
               placeholder="254000000000"
-              className="input-space"
+              className="input-div-space flex justify-between items-center p-3"
               onChange={(e) => {
                 setPhoneNumber(e.target.value);
               }}
@@ -87,15 +82,13 @@ function RegisterInput() {
         <div className="grid input-div  w-screen place-content-center">
           <label className="input-div">Product Category</label>
           <div className="input-div-space flex justify-between items-center">
-            <div className="ml-6">
-              <img src="/images/emailIcon.png" className="input-icon" alt="registration describe"/>
-            </div>
             <select
-              className="input-space"
+              className="input-div-space flex justify-between items-center p-3"
               onChange={(e) => {
                 setProductCategory(e.target.value);
               }}
             >
+              <option>Select</option>
               <option value="Food">Food</option>
               <option value="Drinks">Drinks</option>
             </select>
@@ -104,13 +97,10 @@ function RegisterInput() {
         <div className="grid input-div w-screen place-content-center">
           <label className="input-div">Password</label>
           <div className="input-div-space flex justify-between items-center">
-            <div className="ml-6">
-              <img src="/images/lockicon.png" className="input-icon" alt="registration done"/>
-            </div>
             <input
               type="password"
               placeholder="*******"
-              className="input-space"
+              className="input-div-space flex justify-between items-center p-3"
               onChange={(e) => {
                 setPassword(e.target.value);
               }}
@@ -119,14 +109,11 @@ function RegisterInput() {
         </div>
         <div className="grid input-div w-screen place-content-center">
           <label className="input-div"> Confirm Password</label>
-          <div className="input-div-space flex justify-between items-center">
-            <div className="ml-6">
-              <img src="/images/lockicon.png" className="input-icon" alt="registration describe"/>
-            </div>
+          <div className="input-div-space flex justify-between items-center p-3">
             <input
               type="password"
               placeholder="*******"
-              className="input-space"
+              className="input-div-space flex justify-between items-center p-3"
               onChange={(e) => {
                 setConfirmPassword(e.target.value);
               }}

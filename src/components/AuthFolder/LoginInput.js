@@ -48,14 +48,10 @@ function LoginInput() {
         <div className="grid input-div  w-screen place-content-center">
           <label className="input-div">Email</label>
           <div className="input-div-space flex justify-between items-center">
-            <div className="ml-6">
-              <img src="/images/emailIcon.png" className="input-icon" alt="login done"/>
-            </div>
             <input
-              type="text"
-              placeholder="david@gmail.com"
-              className="input-space"
-              onChange={(e) => {
+              type="email"
+              placeholder="johndoe@gmail.com"
+              className="input-div-space flex justify-between items-center p-3"              onChange={(e) => {
                 setEmailAddress(e.target.value);
               }}
             />
@@ -64,13 +60,10 @@ function LoginInput() {
         <div className="grid input-div w-screen place-content-center">
           <label className="input-div">Password</label>
           <div className="input-div-space flex justify-between items-center">
-            <div className="ml-6">
-              <img src="/images/lockicon.png" className="input-icon" alt="alt register describe"/>
-            </div>
             <input
               type="password"
               placeholder="*******"
-              //   className="input-space"
+              className="input-div-space flex justify-between items-center p-3"
               onChange={(e) => {
                 setPassword(e.target.value);
               }}

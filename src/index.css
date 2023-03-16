@@ -21,9 +21,16 @@ code {
 input {
   border: none;
   background-color: transparent;
+  color:#fff;
 }
 input::placeholder {
   color: #fff;
+}
+input:focus{
+  background-color: #000;
+  border:transparent;
+  width:90%;
+  text-align: center;
 }
 /* .input-space {
   background-color: transparent;
